@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>YourWeatherApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/main.css">
+    <script src="./dist/jQuery.js"></script>
+  </head>
+  <body>
+  <section class="top-banner">
+    <div class="container">
+      <h1 class="heading">Your Weather App</h1>
+      <form id="request" method="POST">
+        <input type="text" id="city" placeholder="Insert your city ..." autofocus>
+        <button type="submit" id="submitWeather">SEARCH</button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </section>
+  <section class="ajax-section">
+    <div class="container">
+
+        <li class="city big-row">
+          <div class="column1">
+            <span class="city-name"></span>
+            <sup class="country-name"></sup>
+            <figure>
+              <img class="city-icon" src="">
+                <figcaption class="description"></figcaption>
+            </figure>
+            <div class="city-temp"></div>
+          </div>
+          <!-- <br><hr><br> -->
+          <div class="column2">
+
+            <div class="more-info">
+            <div class="row make-it-slow">
+              <div class="column left">Temperatura Massima:</div>
+              <div class="column right"><span class="temp-max"></span></div>
+            </div>
+            <div class="row make-it-slow">
+              <div class="column left">Temperatura Minima:</div>
+              <div class="column right"><span class="temp-min"></span></div>
+            </div>
+            <div class="row make-it-slow">
+              <div class="column left">Umidità:</div>
+              <div class="column right"><span class="humidity"></span></div>
+            </div>
+            <div class="row make-it-slow">
+              <div class="column left">Pressione ATM:</div>
+              <div class="column right"><span class="pressure"></span></div>
+            </div>
+            <div class="row make-it-slow">
+              <div class="column left">Direzione del vento:</div>
+              <div class="column right"><span class="deg"></span></div>
+            </div>
+            <div class="row make-it-slow">
+              <div class="column left">Velocità:</div>
+              <div class="column right"><span class="speed"></span></div>
+            </div>
+          </div>
+
+          </div>
+        </li>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="container">
+      <small>Made by <a href="https://www.linkedin.com/in/lorenzo-bottoni-486877110/" target="_blank">Lorenzo Bottoni</a>
+      </small>
+    </div>
+  </footer>
+  </body>
+  <script src="./dist/main.js"></script>
+</html>
